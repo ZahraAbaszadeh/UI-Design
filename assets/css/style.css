@@ -1,0 +1,146 @@
+@font-face {
+  font-family: IranSans;
+  src: url("../fonts/IRANSans-web.woff");
+}
+@font-face {
+  font-family: IranSans;
+  src: url("../fonts/IRANSansWeb\(FaNum\).woff");
+}
+body {
+  font-family: IranSans;
+}
+
+.wrapper label {
+  font-size: 14px;
+}
+
+.iconBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(244, 249, 251);
+  padding: 6px 10px;
+  font-size: 15px;
+  margin: 0 3px;
+  border-radius: 3px;
+  cursor: pointer;
+  color: rgb(36, 36, 194);
+  box-shadow: rgba(60, 64, 67, 0.6) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.2) 0px 2px 6px 2px;
+}
+.iconBox i {
+  font-size: 15px;
+  padding: 0px;
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  margin: 0 auto;
+}
+#descriptionInput {
+  margin-left: 25px;
+}
+
+.custom-table {
+  height: 50vh;
+  font-size: 13px;
+}
+
+.custom-table table th {
+  background-color: #b1d0ff !important;
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 1000;
+}
+.custom-table table td:nth-child(1) {
+  width: 100px;
+  text-align: center;
+}
+.custom-table table td:nth-child(3) {
+  width: 100rem;
+}
+
+.custom-table::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.custom-table::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 3px rgba(62, 62, 62, 0.4);
+}
+
+.custom-table::-webkit-scrollbar-thumb {
+  background: #486589;
+  border-radius: 5px;
+}
+
+.custom-lable {
+  z-index: 100;
+  top: -10px;
+  right: 15px;
+}
+.simpleInput {
+  padding-right: 20px;
+  font-size: 13px;
+  width: 100%;
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+.simpleInput:focus {
+  box-shadow: none;
+  outline: none;
+}
+.info span {
+  font-size: 13px;
+}
+
+.customTable {
+  font-size: 12px;
+}
+.customTable tr {
+  align-items: center;
+  vertical-align: middle;
+}
+td.operationBtn {
+  display: inline-block;
+  width: 150px;
+  background-color: rgb(244, 249, 251);
+  padding: 4px 8px;
+  font-size: 12px;
+  margin: 0 3px;
+  border-radius: 3px;
+  cursor: pointer;
+  box-shadow: rgba(60, 64, 67, 0.6) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.2) 0px 2px 6px 2px;
+}
+td.cancelBtn {
+  width: 150px;
+  position: absolute;
+  left: 52px;
+  top: 0px;
+  font-size: 12px;
+  margin: 0 3px;
+  border-radius: 3px;
+  cursor: pointer;
+  text-align: center;
+  background-color: rgb(244, 249, 251);
+  padding: 16px 8px;
+  box-shadow: rgba(60, 64, 67, 0.6) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.2) 0px 2px 6px 2px;
+}
+.cancelBtn i {
+  color: yellow;
+  font-size: 20px;
+}
+.operationicon {
+  background-color: rgb(244, 249, 251);
+  box-shadow: rgba(60, 64, 67, 0.6) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.2) 0px 2px 6px 2px;
+  font-size: 18px;
+}
+td,
+tr {
+  vertical-align: middle;
+  align-items: center;
+}

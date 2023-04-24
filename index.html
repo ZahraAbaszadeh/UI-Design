@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UI-Design</title>
+    <link rel="stylesheet" href="./assets/fontawesome/css/all.css" />
+    <link rel="stylesheet" href="./assets/fontawesome/css/fontawesome.css" />
+    <link rel="stylesheet" href="./assets/fontawesome/css/solid.css" />
+
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="container-fluid p-3 bg-light">
+      <div class="wrapper">
+        <!-- -------------------------------- -->
+        <div class="row">
+          <div class="col-1"><label>شماره برگه :</label></div>
+          <div class="col-1">
+            <input
+              type="text"
+              class="simpleInput shadow-sm text-center p-0"
+              value="1"
+            />
+          </div>
+          <div class="col-1"><label>سریال :</label></div>
+          <div class="col-1">
+            <input
+              type="text"
+              class="simpleInput shadow-sm text-center p-0"
+              value="4"
+            />
+          </div>
+          <div class="col-1"><label>نوع برگه :</label></div>
+          <div class="col-5">
+            <select class="form-select w-75 py-0">
+              <option selected>سند عمومی</option>
+              <option value="1">یک</option>
+              <option value="2">دو</option>
+              <option value="3">سه</option>
+            </select>
+          </div>
+          <div class="col-1" style="text-align: end">بسته</div>
+          <div class="col-1 d-flex align-items-center justify-content-end">
+            <span class="iconBox"
+              ><i class="fa-solid fa-plus" style="color: #57cf57"></i
+            ></span>
+            <span class="iconBox"
+              ><i class="fa-solid fa-minus" style="color: #e70a0a"></i
+            ></span>
+          </div>
+        </div>
+        <!-- -------------------------------- -->
+        <div class="row mt-2">
+          <div class="col-1"><label>شماره سریال :</label></div>
+          <div class="col-1">
+            <input
+              type="text"
+              class="simpleInput shadow-sm text-center p-0 bg-danger"
+              value=""
+            />
+          </div>
+          <div class="col-1"><label>تاریخ :</label></div>
+          <div class="col-1">
+            <input
+              type="text"
+              class="simpleInput shadow-sm text-center p-0"
+              value="1401/01/01"
+            />
+          </div>
+          <div class="col-2"><label>کاربر : نرگس عباسی</label></div>
+          <div class="col-2"><label>بررسی کننده : خانم جعفری</label></div>
+          <div class="col-3"></div>
+          <div class="col-1 d-flex align-items-center justify-content-end">
+            <span class="iconBox"
+              ><i
+                class="fa-solid fa-file-circle-exclamation"
+                style="color: cornflowerblue"
+              ></i
+            ></span>
+            <span class="iconBox"
+              ><i class="fa-solid fa-file-pen" style="color: #3f903f"></i
+            ></span>
+          </div>
+        </div>
+        <!-- -------------------------------- -->
+
+        <div class="row mt-2 align-items-start">
+          <div class="col-1"><label>شرح کلی سند :</label></div>
+          <div class="col-9">
+            <input
+              type="text"
+              class="simpleInput shadow-sm p-0"
+              style="width: 99%"
+            />
+          </div>
+
+          <div class="col-2 d-flex align-items-center justify-content-end">
+            <span class="iconBox"> <i class="fa-solid fa-down-long"></i></span>
+            <span class="iconBox"
+              ><i class="fa-regular fa-folder-open" style="color: #f2d70b"></i
+            ></span>
+            <span class="iconBox"
+              ><i class="fa-solid fa-file-excel" style="color: #317631"></i
+            ></span>
+            <span class="iconBox"
+              ><i class="fa-solid fa-copy" style="color: #de46cc"></i
+            ></span>
+            <span class="iconBox"
+              ><i class="fa-solid fa-paste" style="color: gray"></i
+            ></span>
+            <span class="iconBox"
+              ><i class="fa-solid fa-arrows-rotate"></i
+            ></span>
+          </div>
+        </div>
+        <!-- -------------------------------- -->
+      </div>
+
+      <!-- -------------------------------- -->
+
+      <div class="row w-100 mt-2 mx-auto">
+        <div class="custom-table overflow-scroll p-0">
+          <table class="table table-bordered overflow-scroll">
+            <thead>
+              <tr class="table-primary">
+                <th scope="col-1">ردیف</th>
+                <th scope="col-3">کد حساب</th>
+                <th scope="col-6">شرح حساب</th>
+                <th scope="col-1">بدهکار</th>
+                <th scope="col-1">بستانکار</th>
+                <th scope="col">تعداد</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- -------------------------------- -->
+
+      <div class="content-wrapper mt-3">
+        <div class="row">
+          <div class="col-7">
+            <div
+              class="info border border-1 rounded position-relative px-3 py-1"
+              style="border-color: #919191"
+            >
+              <span class="custom-lable position-absolute bg-light rounded px-2"
+                >شرح حسابـها</span
+              >
+              <div class="row my-2">
+                <div class="col-1"><span>کـل:</span></div>
+                <div class="col-11">
+                  <input
+                    type="text"
+                    class="simpleInput shadow-sm"
+                    value="هزینه های عملیاتی"
+                  />
+                </div>
+              </div>
+              <div class="row my-2">
+                <div class="col-1"><span>معیـن:</span></div>
+                <div class="col-11">
+                  <input
+                    type="text"
+                    class="simpleInput shadow-sm"
+                    value="تعمیر و نگهداری وسائل نقلیه"
+                  />
+                </div>
+              </div>
+              <div class="row my-2">
+                <div class="col-1"><span>تفصیلی1:</span></div>
+                <div class="col-11">
+                  <input
+                    type="text"
+                    class="simpleInput shadow-sm"
+                    value="تکمیل کاری"
+                  />
+                </div>
+              </div>
+              <div class="row my-2">
+                <div class="col-1"><span>تفصیلی2:</span></div>
+                <div class="col-11">
+                  <input type="text" class="simpleInput shadow-sm" value="1" />
+                </div>
+              </div>
+              <div class="row my-2">
+                <div class="col-1"><span>تفصیلی3:</span></div>
+                <div class="col-11">
+                  <input
+                    type="text"
+                    class="simpleInput shadow-sm"
+                    value="ندارد"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- -------------------------------- -->
+          <div class="col-5">
+            <div class="leftSide px-3 py-1">
+              <div class="row my-2">
+                <div class="col">
+                  <input
+                    type="text"
+                    class="simpleInput text-success text-center shadow-sm"
+                    value="123456789"
+                    readonly
+                  />
+                </div>
+                <div class="col">
+                  <input
+                    type="text"
+                    class="simpleInput text-danger text-center shadow-sm"
+                    value="123456789"
+                    readonly
+                  />
+                </div>
+              </div>
+              <div class="row my-2">
+                <div
+                  class="col d-flex align-items-center justify-content-between"
+                >
+                  <span class="iconBox"
+                    ><i class="fa-solid fa-forward"></i
+                  ></span>
+                  <span class="iconBox"
+                    ><i class="fa-solid fa-forward-fast"></i
+                  ></span>
+                  <span class="iconBox"
+                    ><i class="fa-solid fa-backward-fast"></i
+                  ></span>
+                  <span class="iconBox"
+                    ><i class="fa-solid fa-backward"></i
+                  ></span>
+
+                  <span class="iconBox"
+                    ><i class="fa-solid fa-calculator text-info"></i
+                  ></span>
+                  <span class="iconBox"
+                    ><i class="fa-solid fa-file-circle-plus text-success"></i
+                  ></span>
+                  <span class="iconBox"
+                    ><i
+                      class="fa-solid fa-magnifying-glass-plus text-warning"
+                    ></i
+                  ></span>
+                  <span class="iconBox"
+                    ><i class="fa-solid fa-palette"></i
+                  ></span>
+                  <span class="iconBox"
+                    ><i class="fa-solid fa-xmark text-danger"></i
+                  ></span>
+
+                  <span class="iconBox"
+                    ><i class="fa-solid fa-print text-secondary"></i
+                  ></span>
+
+                  <span class="iconBox"
+                    ><i class="fa-solid fa-screwdriver-wrench text-dark"></i
+                  ></span>
+                </div>
+              </div>
+              <div class="row my-2">
+                <div class="customTable">
+                  <table class="table table-borderless">
+                    <tbody>
+                      <tr class="position-relative">
+                        <td class="operationBtn">
+                          <div
+                            class="d-flex justify-content-between align-items-center"
+                          >
+                            <span>جدید</span>
+                            <span>
+                              <i
+                                class="fa-solid fa-file-circle-plus"
+                                style="font-size: 20px; color: #50aa50"
+                              ></i>
+                            </span>
+                          </div>
+                        </td>
+                        <td class="operationBtn" style="margin-right: 17px">
+                          <div
+                            class="d-flex justify-content-between align-items-center"
+                          >
+                            <span>صدور</span>
+                            <span>
+                              <i
+                                class="fa-solid fa-note-sticky"
+                                style="font-size: 20px; color: #c3c5c3"
+                              ></i>
+                            </span>
+                          </div>
+                        </td>
+                        <td rowspan="2" class="cancelBtn">
+                          <div><i class="fa-solid fa-lightbulb"></i></div>
+                          <div><span>لغو تایید</span></div>
+                        </td>
+
+                        <td style="padding-left: 4px">
+                          <span class="iconBox m-0" style="float: left"
+                            ><i class="fa-solid fa-print"></i
+                          ></span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="operationBtn">
+                          <div
+                            class="d-flex justify-content-between align-items-center"
+                          >
+                            <span>ویرایش</span>
+                            <span>
+                              <i
+                                class="fa-solid fa-file-pen"
+                                style="font-size: 20px; color: #e1d93d"
+                              ></i>
+                            </span>
+                          </div>
+                        </td>
+                        <td class="operationBtn" style="margin-right: 17px">
+                          <div
+                            class="d-flex justify-content-between align-items-center"
+                          >
+                            <span>یادداشت</span>
+                            <span>
+                              <i
+                                class="fa-regular fa-file-lines"
+                                style="font-size: 20px; color: #c3c5c3"
+                              ></i>
+                            </span>
+                          </div>
+                        </td>
+                        <td class="" style="padding-left: 4px">
+                          <span class="iconBox m-0" style="float: left">
+                            <i
+                              class="fa-solid fa-trash-can"
+                              style="color: #c22424"
+                            ></i
+                          ></span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="operationBtn">
+                          <div
+                            class="d-flex justify-content-between align-items-center"
+                          >
+                            <span>لیست</span>
+                            <span>
+                              <i
+                                class="fa-regular fa-rectangle-list"
+                                style="font-size: 20px; color: #53c7f5"
+                              ></i>
+                            </span>
+                          </div>
+                        </td>
+                        <td class="operationBtn" style="margin-right: 17px">
+                          <div
+                            class="d-flex justify-content-between align-items-center"
+                          >
+                            <span>صرفه نظر</span>
+                            <span>
+                              <i
+                                class="fa-solid fa-folder-closed"
+                                style="font-size: 20px; color: #c3c5c3"
+                              ></i>
+                            </span>
+                          </div>
+                        </td>
+                        <td
+                          colspan="2"
+                          class="operationBtn"
+                          style="margin-right: 17px"
+                        >
+                          <div
+                            class="d-flex justify-content-between align-items-center"
+                          >
+                            <span>خروج</span>
+                            <span
+                              ><i
+                                class="fa-solid fa-person-running fa-flip-horizontal"
+                                style="font-size: 20px; color: rgb(98, 7, 7)"
+                              ></i
+                            ></span>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./assets/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="./assets/js/jquery-3.6.4.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
